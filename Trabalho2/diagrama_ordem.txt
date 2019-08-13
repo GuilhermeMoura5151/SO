@@ -1,0 +1,25 @@
+Group           Receptionist            Waiter          Chef
+(sleep)    tablereq
+goto------------------->
+                       |
+  <---------------------
+  |                    foodreq
+   -------------------------------------->
+                                         |      foodorder
+                                         ------------------>
+                                                           |
+                                                           |cook(sleep)
+                                              foodready    |
+                                         <------------------                  
+               takefood                 |
+ <---------------------------------------
+ |
+ |eat(sleep)
+ |       billreq
+ ------------------>
+                   |
+        tabledone  |
+ <-----------------
+ |
+ |
+ |

@@ -1,0 +1,82 @@
+\documentclass{scrartcl}
+\setkomafont{disposition}{\normalfont\bfseries}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.75in]{geometry}
+
+% packages para tabela
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{siunitx}
+
+\usepackage{lscape} % Para tabela na horizontal
+
+
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\setlength{\headheight}{13.2pt}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Sistemas Operativos}
+\lhead{Universidade de Aveiro}
+\cfoot{\fancyplain{}{\thepage}}
+
+\renewcommand\thesubsection{\arabic{subsection}} % Definir subsections com numeração 1, 2, ... em vez de 0.1, 0.2, ...
+\date{Dezembro 2018}
+\title{\textbf{Trabalho 2 -- Restaurante}}
+\subtitle{Sistemas Operativos}
+\author{
+  Juliana Silva, MIEC, 84783
+  \and
+  Bruno Pinto, LEI, 73156 
+}
+
+\begin{document}
+\maketitle
+
+\section{Introdução}
+
+
+\begin{landscape}
+%template de coluna
+\begin{table}[h]
+\centering
+\caption{Semáforos usados por função por entidade}
+\label{Sem}
+\begin{tabular}{@{} l *{8}{S[table-format=2.2]} @{}}
+    \toprule
+    Semáforo & \multicolumn{2}{c@{}}{Chef} & \multicolumn{3}{c@{}}{Waiter} & \multicolumn{3}{c@{}}{Receptionist}\\
+    \cmidrule(l){2-9}
+    & {waitForOrder()} &  {processOrder()}   & {waitForClientOrChef()} &  {informChef()} & {takeFoodToTable()} & {waitForGroup()} & {provideTableOrWaitingRoom()} & {receivePayment()} \\
+    \midrule
+    sem 1                 &   8,11 & 16,79    \\
+    Hay \& Davies           &   8,11 & 16,75    \\
+    P. Albuquerque   1988   &   8,33 & 17,39    \\
+    P. Phoenix 1988         &   8,34 & 17,39    \\
+    P. Sandia composite 1988&   8,39 & 17,38    \\ \addlinespace
+    King                    &   8,41 & 16,75   \\
+    P. Cape Canaveral 1988  &   8,50 & 17,55    \\
+    P. USA composite 1988   &   8,51 & 17,51    \\
+    P. Osage 1988           &   8,55 & 17,87    \\
+    P. All sites composite 1990&8,58 & 17,61    \\ \addlinespace
+    Isotropic sky           &   8,59 & 16,20    \\
+    P. Albany 1988          &   8,65 & 17,54    \\
+    P. Elmonte 1988         &   8,65 & 17,61    \\
+    P. All sites composite 1988&8,74 & 17,79    \\
+    P. France 1988          &   9,23 & 18,17    \\ \addlinespace
+    Klucher                 &  10,38 & 20,02    \\
+    \midrule
+    \multicolumn{1}{r}{Column averages} 
+                            &   8,63 & 17,52    \\
+    \bottomrule
+\end{tabular}
+\end{table}
+\end{landscape}
+
+
+%\clearpage
+%\bibliographystyle{unsrt}
+%\bibliography{optativa}
+\end{document}
+

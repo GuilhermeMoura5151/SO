@@ -1,0 +1,23 @@
+Correr professor:
+make all_bin
+cd ../run
+./probSemSharedMemRestaurant
+
+Usar nosso codigo:
+cd ../src
+vim semsharedMemchef.c
+make ch
+cd ../run
+./probSemSharedMemRestaurant
+
+
+Caso deadlock:
+crtl-c
+ipcs
+vim clean.sh
+./clean.sh
+
+#######################################################################
+
+Mexer full stat apenas em zona critica
+

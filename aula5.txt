@@ -1,0 +1,34 @@
+C operator precedence
+	() function call
+	[]
+	.   -(maior)
+	++	-- (postfix)
+......................................
+	
+	++      -- (prefix)
+	+       -  (unary)
+	!       ~
+	(type)  cast
+	*       deriference
+	&      address of
+	size of
+----------------------------------------
+
+	*   /    %
+-----------------------------------------
+
+	+    -
+
+
+int *pi;
+int x=10, y;
+
+pi     =  &x;
+int x    int x
+
+y     =   *pi;
+int       int
+
+*pi=20;   
+
+arr1[i]  ==   *(arr1 + i)

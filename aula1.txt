@@ -1,0 +1,43 @@
+sop0108
+xseho
+
+4c)
+	dev		DEVICES (VIRTUAL FILES)
+	home		USER HOME DIRECTORIES
+	lost+found	RECOVERED FILES
+	mnt		MOUNT POINT FOR OTHER FILE SYSTEMS
+	proc		PROCESS/SYSTEM INFORMATION (VIRTUAL FILES) 
+	run		USED BY RUNNING APPLICATIONS
+	srv		SERVER
+	var		VARIABLE THINGS (LOGS)
+	boot		BOOT CONFIGURATION
+	media		MOUNT POINT
+	opt		APPLICATIONS
+	root		SUPERUSER HOME
+	sys		CONFIGURATION
+/////////////////////////////////////////////////////////
+
+INTERNAL COMMAND
+	executed within the shell
+
+EXTERNAL COMMAND
+	shell launches a new process with associated arguments
+
+/////////////////////////////////////////////////////////
+
+5a)
+	bash	executas comando
+	pwd	imprime nome do ficheiro do directorio actual
+	cd	mudar de directorio~
+	ls	lista informação sobre os ficheiros
+	cat	concatenate ficheiros para standart output
+	diff 	compara ficheiros linha a linha
+	who	imprime informação sobre os users logados
+	cp	copy source to destination, or multiple sources to directory
+	rm	removes each specified file. by default, it does not remove directories
+	history	lista do comandos anteriores ( $!24 - executa comando 24 )
+	mkdir	make directories
+	rmdir	remove the directoriy if they empty
+	export	
+
+	

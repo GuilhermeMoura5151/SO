@@ -1,0 +1,34 @@
+fork
+	duplicates current process, creating a new child process
+
+exec
+	within the current process, changes the program that is executed
+    inicia a execucao de um programa no processo corrente
+
+wait
+	wait for child process
+
+
+fork -> called once, returns twice
+
+	retorna o parend process e o child process
+
+
+PPID of child == PID of parent
+PPID of parent == PID of bash process
+
+
+exec -> called once, never returns!
+
+
+
+wait
+	waits for any child
+
+waitpid
+	has more options, for example, waiting for a specific pid
+
+
+zombie processes
+	code terminated but parent did not execute wait/waitpid
+

@@ -1,0 +1,50 @@
+$ls
+$script.sh
+$./script.sh		se figheiro tiver permissões execução
+			novo processo bash
+$bash script.sh		não necessita permissões execução
+			novo processo bash
+$source script.sh	comandos são executados na bash existente
+$. script.sh
+$python script.py
+$./script
+$python script.py
+$./script.py
+
+EX1		nano aula02e01.sh
+	a)	chmod u+x aula02e01.sh
+	b)	./aula02e01.sh
+
+EX2	Entre aspas mensagem sai como escrita, sem aspas mensagem sai com espaçoes editados.
+
+EX4
+Whitespace	espaço ou TAB ou NEWLINE ou CR ou UTAB ou FF. funciona como seprardor
+$		varios tipos de expansoes
+'texto'		texto nao é alterado
+"texto"		preserva espaços, faz expansões
+#		comentario até ao fim da linha
+;		separador de varios comandos
+\		ESCAPE. caracter seguinte nao é interpretado
+'maior e menor'	redirecionamento saida e entrada de comando
+|		PIPE. redireciona saida de um comando para entrda de um comando seguinte
+[[ex+ressao]]	testar espressao booleana
+{comandos}	varios comandos a substituir um comando
+'comando' ou $(comando)	COMMAND SUBSTITUTION
+(comando)	correr comandos em subshell
+((expressao))	expressoes aritmeticas
+$((expressao))	expansão de espressoes aritmeticas
+
+EX5
+$*	todos os argumentos
+$@	todos os argumentos
+
+"$*"	equivalente "$1 $2 $3...."
+"$@"	equivalente "$1" "$2" "$3".....
+
+f)
+#/bin/bash
+echo "Arg 1: $1"
+echo "Arg 2: $2"
+echo $(($1+$2))
+
+EX6
